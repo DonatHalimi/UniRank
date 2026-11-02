@@ -1,0 +1,3 @@
+import { Link } from 'react-router-dom';
+import { Compass } from 'lucide-react';
+export default function NotFound() { return <div className="surface mx-auto max-w-xl px-8 py-16 text-center"><Compass size={34} className="mx-auto text-accent" /><p className="mt-5 text-xs font-semibold uppercase tracking-[.18em] text-slate-500">404 · Page not found</p><h1 className="mt-3 text-3xl font-bold text-white">This page does not exist.</h1><p className="mt-3 text-sm text-slate-400">The link may be outdated, or the page may have moved.</p><Link to="/" className="button-primary mt-7">Return to UniRank</Link></div>; }

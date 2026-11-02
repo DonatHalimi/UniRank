@@ -1,0 +1,1 @@
+export default function LoadingSkeleton({ rows = 3 }) { return <div className="space-y-3" aria-label="Loading">{Array.from({ length: rows }, (_, index) => <div key={index} className="skeleton h-24 rounded-2xl" />)}</div>; }

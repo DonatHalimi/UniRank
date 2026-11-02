@@ -1,0 +1,2 @@
+const styles = { student: 'bg-sky-400/10 text-sky-300 ring-sky-400/20', professor: 'bg-violet-400/10 text-violet-300 ring-violet-400/20', admin: 'bg-amber-400/10 text-amber-300 ring-amber-400/20' };
+export default function RoleBadge({ role = 'student' }) { return <span className={`inline-flex rounded-full px-2.5 py-1 text-xs font-semibold capitalize ring-1 ${styles[role] || styles.student}`}>{role}</span>; }
